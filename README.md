@@ -1,1 +1,1 @@
-# Activitat-06-Interf-cie-Prototip
+# Activitat-06-Interficie-Prototip
