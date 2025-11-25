@@ -2,5 +2,9 @@
     <string name="app_name">SodaPop</string>
     <string name="description_app">De la teva nevera a la teva taula amb un click</string>
     <string name="invitado">Começar com a invitat</string>
+    <string name="usuari">Ja tens usuari?</string>
+    <string name="inicia_sessio">Inicia sessió</string>
+    <string name="compte">Vols crear un compte?</string>
+    <string name="registrat">Registra\'t</string>
 
 </resources>
