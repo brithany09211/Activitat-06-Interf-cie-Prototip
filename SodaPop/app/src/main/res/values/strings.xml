@@ -17,7 +17,13 @@
     <string name="receptes_recomanades">Receptes recomanades</string>
     <string name="filtrar">Filtrar</string>
     <string name="tiempo">1h</string>
-    <string name="receptes">Recetas</string>
+    <string name="nom_recepta">Nombre de la receta</string>
     <string name="escriu_ingredients">Escriu el nom dels ingredients</string>
+    <string name="buscar_receptes">Buscar receptes</string>
+    <string name="ingredientes_seleccionados">Ingredientes seleccionados</string>
+    <string name="ingredientes">Ingredientes:</string>
+    <string name="passes">Passes:</string>
+    <string name="ingrediente1">ingrediente1</string>
+    <string name="passo1">Passo1</string>
 
 </resources>
