@@ -6,5 +6,18 @@
     <string name="inicia_sessio">Inicia sessió</string>
     <string name="compte">Vols crear un compte?</string>
     <string name="registrat">Registra\'t</string>
+    <string name="nom">Nom</string>
+    <string name="cognoms">Cognoms</string>
+    <string name="correo_electronic">Correo electrònic</string>
+    <string name="contrasenya">Contrasenya</string>
+    <string name="repeteix_contrasenya">Repeteix contrasenya</string>
+    <string name="crear_compte">Crear compte</string>
+    <string name="hola_nom">Hola, Nom!</string>
+    <string name="buscador">Buscador</string>
+    <string name="receptes_recomanades">Receptes recomanades</string>
+    <string name="filtrar">Filtrar</string>
+    <string name="tiempo">1h</string>
+    <string name="receptes">Recetas</string>
+    <string name="escriu_ingredients">Escriu el nom dels ingredients</string>
 
 </resources>
