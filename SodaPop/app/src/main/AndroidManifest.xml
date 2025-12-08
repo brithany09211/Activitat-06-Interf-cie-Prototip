@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SodaPop">
         <activity
+            android:name=".ViewReceptaActivity"
+            android:exported="false" />
+        <activity
             android:name=".BuscadorActivity"
             android:exported="false" />
         <activity
