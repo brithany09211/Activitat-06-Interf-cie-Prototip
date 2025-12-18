@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SodaPop">
         <activity
+            android:name=".BotonsActivity"
+            android:exported="false" />
+        <activity
             android:name=".RebostActivity"
             android:exported="false" />
         <activity
