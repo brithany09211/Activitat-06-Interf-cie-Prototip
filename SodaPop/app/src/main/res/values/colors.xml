@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="white">#F3FFFFFF</color>
-    <color name="rosaboton">#f49cbb</color>
-    <color name="rosa">#C73362</color>
-    <color name="favoritos">#ffdd00</color>
-    <color name="azul_oscuro">#00008B</color>
-    <color name="rosprova">#3C0313</color>
+    <color name="white">#FFFFFFFF</color>
     <color name="rosafondo">#ffe5ec</color>
+    <color name="rosaboton">#f49cbb</color>
+    <color name="favoritos">#ffdd00</color>
+    <color name="jjj">#</color>
     <color name="jj">#</color>
     <color name="j">#</color>
 </resources>
