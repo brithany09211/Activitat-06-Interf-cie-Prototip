@@ -10,9 +10,12 @@
 
     <ImageView
         android:id="@+id/backButton"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:src="@drawable/draw_volver"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/draw_volver_foreground"
+        android:contentDescription="@string/tornar_enrere"
+        android:padding="8dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
@@ -55,9 +58,9 @@
                 android:autofillHints="username"
                 android:background="@drawable/edittext_rounded"
                 android:hint="@string/nom"
+                android:textColorHint="@color/gris"
                 android:inputType="text"
-                android:padding="12dp"
-                android:textColor="@color/black"/>
+                android:padding="12dp"/>
 
             <EditText
                 android:id="@+id/cognoms"
@@ -66,6 +69,7 @@
                 android:layout_marginTop="12dp"
                 android:autofillHints="password"
                 android:hint="@string/cognoms"
+                android:textColorHint="@color/gris"
                 android:background="@drawable/edittext_rounded"
                 android:inputType="textPassword"
                 android:padding="12dp"
@@ -78,6 +82,7 @@
                 android:layout_marginTop="12dp"
                 android:autofillHints="password"
                 android:hint="@string/correo_electronic"
+                android:textColorHint="@color/gris"
                 android:background="@drawable/edittext_rounded"
                 android:inputType="textPassword"
                 android:padding="12dp"
@@ -90,6 +95,7 @@
                 android:layout_marginTop="12dp"
                 android:autofillHints="password"
                 android:hint="@string/contrasenya"
+                android:textColorHint="@color/gris"
                 android:background="@drawable/edittext_rounded"
                 android:inputType="textPassword"
                 android:padding="12dp"
@@ -103,6 +109,7 @@
                 android:layout_marginTop="12dp"
                 android:autofillHints="password"
                 android:hint="@string/repeteix_contrasenya"
+                android:textColorHint="@color/gris"
                 android:background="@drawable/edittext_rounded"
                 android:inputType="textPassword"
                 android:padding="12dp"
@@ -116,6 +123,7 @@
                 android:backgroundTint="@color/rosaboton"
                 android:minHeight="48dp"
                 android:text="@string/crear_compte"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textAllCaps="true"/>
 

@@ -32,5 +32,11 @@
     <string name="aceptar">Aceptar</string>
     <string name="taula_d_aliments">Taula d\'aliments</string>
     <string name="data">Data</string>
+    <string name="boton_parar_volver_atras" />
+    <string name="meves_receptes" />
+    <string name="icono_de_favoritos" />
+    <string name="icono_del_tiempo" />
+    <string name="logo" />
+    <string name="tornar_enrere" />
 
 </resources>

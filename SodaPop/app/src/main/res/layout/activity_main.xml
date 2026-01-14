@@ -14,7 +14,6 @@
         android:layout_height="350dp"
         android:contentDescription="@string/logo"
         android:src="@drawable/logo1"
-        android:contentDescription="@string/logo_descripcio"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
