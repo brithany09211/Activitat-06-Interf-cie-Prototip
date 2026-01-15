@@ -21,9 +21,6 @@ class BotonsActivity : AppCompatActivity() {
         }
 
         // Conectar botones a actividades existentes
-        findViewById<Button>(R.id.button1).setOnClickListener {
-            startActivity(Intent(this, RebostActivity::class.java))
-        }
         findViewById<Button>(R.id.button2).setOnClickListener {
             startActivity(Intent(this, ViewReceptaActivity::class.java))
         }
@@ -32,9 +29,6 @@ class BotonsActivity : AppCompatActivity() {
         }
         findViewById<Button>(R.id.button4).setOnClickListener {
             startActivity(Intent(this, HomeActivity::class.java))
-        }
-        findViewById<Button>(R.id.button5).setOnClickListener {
-            startActivity(Intent(this, IniciarSessioActivity::class.java))
         }
         findViewById<Button>(R.id.button6).setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))

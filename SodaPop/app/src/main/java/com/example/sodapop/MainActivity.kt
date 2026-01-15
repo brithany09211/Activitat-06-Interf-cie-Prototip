@@ -1,6 +1,8 @@
 package com.example.sodapop
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen
@@ -12,15 +14,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         // Cridar abans de super.onCreate() i setContentView()
         val splashScreen = installSplashScreen()
-
-        // Opcional: Per mantenir-lo a la pantalla durant més temps (p. ex. carregar dades)
         splashScreen.setKeepOnScreenCondition {
-            // Retorna 'true' per mantenir el splash screen, 'false' per amagar-lo
-            // Aquí hi aniria la teva lògica de càrrega
             false
         }
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        findViewById<Button>(R.id.btnInvitado).setOnClickListener {
+            startActivity(Intent(this, HomeActivity::class.java))
+        }
     }
 }

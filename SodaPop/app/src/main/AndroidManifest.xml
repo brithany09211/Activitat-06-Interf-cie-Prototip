@@ -15,9 +15,6 @@
             android:name=".BotonsActivity"
             android:exported="false" />
         <activity
-            android:name=".RebostActivity"
-            android:exported="false" />
-        <activity
             android:name=".ViewReceptaActivity"
             android:exported="false" />
         <activity
@@ -25,9 +22,6 @@
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".IniciarSessioActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
