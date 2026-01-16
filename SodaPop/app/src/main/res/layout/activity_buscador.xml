@@ -32,8 +32,9 @@
 
     <EditText
         android:id="@+id/buscadorIngredientes"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:autofillHints=""
         android:background="@drawable/edittext_rounded"
         android:inputType=""
@@ -44,7 +45,6 @@
         app:drawableStartCompat="@drawable/draw_buscar"
         app:layout_constraintTop_toBottomOf="@id/buscador"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="12dp"
         tools:ignore="LabelFor" />
 
@@ -61,25 +61,14 @@
 
     <Button
         android:id="@+id/buscarReceptes"
-        android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
         android:backgroundTint="@color/rosaboton"
         android:text="@string/buscar_receptes"
         android:textAllCaps="true"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/bottomNav"/>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNav"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/rosaboton"
-        app:menu="@menu/bottom_menu"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>

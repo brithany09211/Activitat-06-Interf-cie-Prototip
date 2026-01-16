@@ -1,6 +1,9 @@
 package com.example.sodapop
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -13,18 +16,31 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-
+        //Volver atras:
+        findViewById<ImageView>(R.id.backButton).setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+        //Mensaje de bienvenida
         val bienvenida = findViewById<TextView>(R.id.bienvenida)
         val username = intent.getStringExtra("nom")
 
         bienvenida.text = "Hola, $username!"
 
+        //Botones de buscador y filtro
+        findViewById<Button>(R.id.btn_buscador).setOnClickListener {
+            startActivity(Intent(this, BuscadorActivity::class.java))
+        }
+
+        //findViewById<Button>(R.id.btn_filtratge).setOnClickListener {
+        //    startActivity(intent(this, FiltratgeActivity::class.java))
+        //}
+        //Menu navigation
         val bottomNav: BottomNavigationView = findViewById(R.id.bottomNav)
 
         bottomNav.setOnItemSelectedListener { item ->
             val selectedFragment: Fragment? = when (item.itemId) {
-                //R.id.home_fragment -> HomeFragment()
-                //R.id.dashboard_fragment -> DashboardFragment()
+                //R.id.nav_lesmevesreceptes -> LesmevesReceptesFragment()
+                //R.id.na_perfil -> PerfilFragment()
                 R.id.nav_rebost -> FragmentRebost()
                 else -> null
             }
