@@ -15,6 +15,9 @@
             android:name=".BotonsActivity"
             android:exported="false" />
         <activity
+            android:name=".RegistrarActivity"
+            android:exported="false" />
+        <activity
             android:name=".ViewReceptaActivity"
             android:exported="false" />
         <activity

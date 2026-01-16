@@ -90,7 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/inicia_sessio"
+        android:text="@string/crear_compte"
         android:textSize="20sp"
         android:textColor="@color/rosa"
         android:textStyle="bold"

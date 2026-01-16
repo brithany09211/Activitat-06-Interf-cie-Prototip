@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Filtra al teu gust"
+        android:text="@string/filtra_al_teu_gust"
         android:textStyle="bold"
         android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@id/backButton"
