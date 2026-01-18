@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SodaPop">
         <activity
+            android:name=".ResultatsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IniciarSessioActivity"
+            android:exported="false" />
+        <activity
             android:name=".BotonsActivity"
             android:exported="false" />
         <activity
@@ -25,8 +31,8 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.App.SplashScreen"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.App.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">SodaPop</string>
     <string name="description_app">De la teva nevera a la teva taula amb un click</string>
-    <string name="invitado">Começar com a invitat</string>
+    <string name="invitado">Començar com a invitat</string>
     <string name="usuari">Ja tens usuari?</string>
     <string name="inicia_sessio">Inicia sessió</string>
     <string name="compte">Vols crear un compte?</string>
     <string name="registrat">Registra\'t</string>
     <string name="nom">Nom</string>
     <string name="cognoms">Cognoms</string>
-    <string name="correo_electronic">Correo electrònic</string>
+    <string name="correo_electronic">Correu electrònic</string>
     <string name="contrasenya">Contrasenya</string>
     <string name="repeteix_contrasenya">Repeteix contrasenya</string>
     <string name="crear_compte">Crear compte</string>
@@ -42,4 +42,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ingrediente2">Ingrediente 2</string>
 
+
+    <string name="btnIniciar">INICIAR</string>
+    <string name="Resultats">Resultats</string>
 </resources>
