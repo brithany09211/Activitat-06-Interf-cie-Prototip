@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<TextView>(R.id.linkIniciarSessio).setOnClickListener {
-            startActivity(Intent(this, RegistrarActivity::class.java))
+            startActivity(Intent(this, IniciarSessioActivity::class.java))
         }
 
         findViewById<TextView>(R.id.linkRegistrar).setOnClickListener {
