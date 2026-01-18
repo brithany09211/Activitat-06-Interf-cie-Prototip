@@ -20,8 +20,8 @@
     <string name="nom_recepta">Nombre de la receta</string>
     <string name="escriu_ingredients">Escriu el nom dels ingredients</string>
     <string name="buscar_receptes">Buscar receptes</string>
-    <string name="ingredientes_seleccionados">Ingredientes seleccionados</string>
-    <string name="ingredientes">Ingredientes:</string>
+    <string name="ingredientes_seleccionados">Ingredients seleccionats</string>
+    <string name="ingredientes">Ingredients:</string>
     <string name="passes">Passes:</string>
     <string name="ingrediente1">ingrediente1</string>
     <string name="passo1">Passo1</string>
@@ -41,6 +41,15 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ingrediente2">Ingrediente 2</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="ultim_pas">Un últim pas</string>
+    <string name="finalitzar">Finalitzar</string>
+    <string name="dataNaix">Data de naixement</string>
+    <string name="allergies">Al·lèrgies</string>
+    <string name="dieta">Tipus de dieta</string>
+    <string name="desc_ultimpas">Per garantir-te una millor experiència és necessari altres dades complementàries</string>
+    <string name="dasc2_utimpas">En cas de ser necessari, podràs canviar aquestes dades a l\'apartat del teu perfil</string>
+
 
 
     <string name="btnIniciar">INICIAR</string>
