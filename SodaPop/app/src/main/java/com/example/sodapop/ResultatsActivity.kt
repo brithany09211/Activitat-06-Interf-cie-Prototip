@@ -1,6 +1,9 @@
 package com.example.sodapop
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -31,5 +34,9 @@ class ResultatsActivity : AppCompatActivity() {
             Toast.makeText(this, "Has clicat: ${receta.nombre}", Toast.LENGTH_SHORT).show()
         }
         recyclerView.adapter = adapter
+
+        findViewById<ImageView>(R.id.resultats_backbutton).setOnClickListener {
+            startActivity(Intent(this, BuscadorActivity::class.java))
+        }
     }
 }
