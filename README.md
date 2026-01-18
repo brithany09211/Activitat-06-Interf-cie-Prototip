@@ -1,5 +1,5 @@
 # DOCUMENTACIÓ APLICACIÓ SODAPOP
-***
+
 ## ACTIVITAT 7
 L’objectiu d’aquesta activitat és la de desenvolupar el menú i la navegació de l’app, afegir llistes dinàmiques utilitzant el RecyclerView i programar els seus events i els seus filtres. També la d'incorporar el logotip animat de l’app a la pantalla inicial utilitzant Splash screen.
 
@@ -18,8 +18,8 @@ La HomeActivity conté un BottomNavigationView (menú de navegació) que permet 
 Per implementar-ho, hem utilitzat fragments per modularitzar les pantalles (per exemple, FragmentRebost) i controlar la transició amb el FragmentManager.
 
 Per implementar la navegació amb el BottomNavigationView, hem utilitzat el següent codi per detectar la selecció d’un element i substituir el fragment corresponent dins del FragmentContainerView:
-`val bottomNav: BottomNavigationView = findViewById(R.id.bottomNav)
 
+`val bottomNav: BottomNavigationView = findViewById(R.id.bottomNav)
 bottomNav.setOnItemSelectedListener { item ->
     val selectedFragment: Fragment? = when (item.itemId) {
         R.id.nav_rebost -> FragmentRebost()
@@ -32,6 +32,7 @@ bottomNav.setOnItemSelectedListener { item ->
     }
     true
 }`
+
 D'aquesta manera quan l’usuari prem un element del menú, el fragment corresponent s’injecta dins del contenidor de fragments de la HomeActivity.
 
 ### Pantalla de Resultats (RecyclerView -> ResultatsActivity)
@@ -46,7 +47,6 @@ recyclerView.layoutManager = LinearLayoutManager(this)
 adapter = RecetaAdapter(DataSource.recetas) { receta ->
     Toast.makeText(this, "Has clicat: ${receta.nombre}", Toast.LENGTH_SHORT).show()
 }
-
 recyclerView.adapter = adapter`
 
 El RecetaAdapter s'encarrega de gestionar la llista de receptes i la inflació dels items, mentre que el RecetaViewHolder conté totes les referències a les vistes de cada item (en el nostre cas és nom i imatge) i defineix el listener per a poder fer el clic.
@@ -81,5 +81,6 @@ adapter = RecetaAdapter(recetasFiltradas) { receta ->
     Toast.makeText(this, "Has clicat: ${receta.nombre}", Toast.LENGTH_SHORT).show()
 }
 recyclerView.adapter = adapter`
+
 
 Tot i que no es el filtratge definitiu per a la nostra app, aquest primer enfocament ens permetrá aplicar filtres més complexos en el futur i fer que la llista de resultats sigui més dinàmica i interactiva.
