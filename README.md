@@ -79,18 +79,27 @@ class RecetaViewHolder(
 }
 ```
 
-També en aquesta pantalla s'ha implementat un filtrat senzill que mostra només les receptes que contenen una lletra en especific (“a” per exemple). Aquest filtre modifica la llista que es passa a l’adapter i actualitza la vista.
+També en aquesta pantalla s'ha implementat un filtrat senzill que mostra només les receptes que contenen la paraula o lletra que li especifiquem en el EditText de la pantalla de cerca (BuscadorActivity). Aquest filtre modifica la llista que es passa a l’adapter i actualitza la vista.
 
 A continuació mostrem un fragment del codi del ResultatsActivity.kt:
 
 ```
-val recetasFiltradas = DataSource.recetas.filter { it.nombre.contains("s", ignoreCase = true) }
+val editTextBuscar = findViewById<EditText>(R.id.buscadorIngredientes)
+        val botonBuscar = findViewById<Button>(R.id.buscarReceptes)
 
-adapter = RecetaAdapter(recetasFiltradas) { receta ->
-    Toast.makeText(this, "Has clicat: ${receta.nombre}", Toast.LENGTH_SHORT).show()
-}
-recyclerView.adapter = adapter
+        botonBuscar.setOnClickListener {
+            val query = editTextBuscar.text.toString()
+
+            if (query.isBlank()) {
+                Toast.makeText(this, "Escribe algo para buscar", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            val intent = Intent(this, ResultatsActivity::class.java)
+            intent.putExtra("search_query", query)
+            startActivity(intent)
+        }
 ```
 
 
-Tot i que no es el filtratge definitiu per a la nostra app, aquest primer enfocament ens permetrá aplicar filtres més complexos en el futur i fer que la llista de resultats sigui més dinàmica i interactiva.
+Tot i que no és el filtratge definitiu per a la nostra app, aquest primer enfocament ens permetrá aplicar filtres més complexos en el futur i fer que la llista de resultats sigui més dinàmica i interactiva.
