@@ -51,4 +51,9 @@
     <string name="dasc2_utimpas">En cas de ser necessari, podràs canviar aquestes dades a l\'apartat del teu perfil</string>
     <string name="btnIniciar">INICIAR</string>
     <string name="Resultats">Resultats</string>
+    <string name="LesMevesReceptes">Les meves receptes</string>
+    <string name="perfil">Perfil</string>
+    <string name="Preferències">Preferències</string>
+    <string name="nomusuari">Nom d\'usuari</string>
+    <string name="dades">Dades</string>
 </resources>
