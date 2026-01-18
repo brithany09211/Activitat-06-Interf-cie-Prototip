@@ -12,7 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SodaPop">
         <activity
-            android:name=".RebostActivity"
+            android:name=".ResultatsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IniciarSessioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BotonsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarActivity"
             android:exported="false" />
         <activity
             android:name=".ViewReceptaActivity"
@@ -24,11 +33,9 @@
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".IniciarSessioActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.App.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

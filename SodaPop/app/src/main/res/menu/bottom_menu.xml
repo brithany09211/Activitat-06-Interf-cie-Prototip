@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nav_home"
+        android:id="@+id/nav_lesmevesreceptes"
         android:icon="@drawable/draw_favorito"
         android:title="Les meves receptes" />
 
     <item
-        android:id="@+id/nav_favorites"
+        android:id="@+id/nav_perfil"
         android:icon="@drawable/draw_perfil"
         android:title="Perfil" />
 
     <item
-        android:id="@+id/nav_profile"
+        android:id="@+id/nav_rebost"
         android:icon="@drawable/draw_rebost"
         android:title="Rebost" />
 
