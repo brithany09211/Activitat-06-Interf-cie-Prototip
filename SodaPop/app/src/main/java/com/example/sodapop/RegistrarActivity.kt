@@ -9,7 +9,11 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 class RegistrarActivity : AppCompatActivity() {
 
-    // ViewModel con ámbito de Activity
+    /**
+     * Instància del ViewModel.
+     * Utilitzem 'by viewModels()' perquè Android la creï i la gestioni automàticament.
+     * Això ens permet connectar amb la lògica.
+     */
     private val viewModel: RegistrarViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +28,10 @@ class RegistrarActivity : AppCompatActivity() {
         val editRepetir = findViewById<EditText>(R.id.repetcontrasenya)
         val btnCrear = findViewById<Button>(R.id.CrearCompte)
 
-        // Event de l'usuari
+        /**
+         * Quan l'usuari clica el botó, no comprovem res aquí.
+         * Simplement agafem el text i l'enviem al ViewModel perquè faci la feina.
+         */
         btnCrear.setOnClickListener {
             viewModel.validarDades(
                 editNom.text.toString(),
@@ -35,7 +42,11 @@ class RegistrarActivity : AppCompatActivity() {
             )
         }
 
-        // Observer del registre correcte
+        /**
+         * Observer: Validació correcte.
+         * Cada vegada que el ViewModel canviï aquest valor, s'executarà aquest codi.
+         * Si és true, vol dir que tot ha anat bé i canviem de pantalla.
+         */
         viewModel.registreCorrecte.observe(this) { correcte ->
             if (correcte) {
                 val intent = Intent(this, HomeActivity::class.java)
@@ -44,7 +55,10 @@ class RegistrarActivity : AppCompatActivity() {
             }
         }
 
-        // Observer de missatges d'error
+        /**
+         * Observer 2: Gestió d'errors.
+         * Si el ViewModel detecta un error, ens avisa aquí i nosaltres només l'ensenyem.
+         */
         viewModel.missatgeError.observe(this) { error ->
             Toast.makeText(this, error, Toast.LENGTH_SHORT).show()
         }
