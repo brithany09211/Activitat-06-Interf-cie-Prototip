@@ -3,6 +3,7 @@ package com.example.sodapop
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -30,6 +31,9 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this, BuscadorActivity::class.java))
         }
 
+//        findViewById<ImageView>(R.id.backButton).setOnClickListener {
+//            startActivity(intent(this, IniciarSessioActivity::class.java))
+//        }
         //findViewById<Button>(R.id.btn_filtratge).setOnClickListener {
         //    startActivity(intent(this, FiltratgeActivity::class.java))
         //}
