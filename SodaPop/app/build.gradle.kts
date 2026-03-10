@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-parcelize")
 }
 
 android {
@@ -48,4 +49,10 @@ dependencies {
     implementation("androidx.cardview:cardview:1.0.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
+    // Retrofit Core
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    // Converter per gestionar JSON (Generalment es fa servir GSON)
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    // (Opcional) Interceptor per poder veure els logs de les peticions (molt útil per a debug)
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
 }
